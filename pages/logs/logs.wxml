@@ -1,0 +1,17 @@
+<!--logs.wxml-->
+<view class='cc'>
+<form bindsubmit="r2b">
+<input name="red" placeholder='R'placeholder-style="font-size:13px;margin-left:0.5rem"style='margin:1rem 0.3rem;border-radius: 7px;background-color:#C9C9CB;height:2rem' type="number"></input>
+<input placeholder='G'placeholder-style="font-size:13px;margin-left:0.5rem"style='margin:1rem 0.3rem;border-radius: 7px;background-color:#C9C9CB;height:2rem'name="green"type="number"></input>
+<input placeholder='B'placeholder-style="font-size:13px;margin-left:0.5rem"style='margin:1rem 0.3rem;border-radius: 7px;background-color:#C9C9CB;height:2rem'name="blue"type="number"></input>
+<button class='type'  formType="submit">RGB TO BI</button>
+</form>
+<label class='color' style='background-color:{{color}};color:white'>{{color}}</label>
+</view>
+<view class='cc'>
+<form bindsubmit="b2r">
+<input name="bi" placeholder="BI (please no '#')"placeholder-style="font-size:13px;margin-left:0.5rem"style='margin:1rem 0.3rem;border-radius: 7px;background-color:#C9C9CB;height:2rem'value='{{BI}}'></input>
+<button class='type'formType="submit">BI TO RGB</button>
+</form>
+<label class='color' style='background-color:{{color2}};color:white'>{{R}}:{{G}}:{{B}}</label>
+</view>

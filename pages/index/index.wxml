@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<view class="container" style='background-color:#F5F8E4'>
+<view style="{{show? '':'display:none;'}}"class='cc' >
+<label class='title'>Input time slot</label>
+<form bindsubmit="setTime">
+<input type="number" name="hour" placeholder-style="font-size:13px;margin-left:0.5rem" placeholder="hour" auto-focus style='margin:1rem 1rem;border-radius: 7px;background-color:#C9C9CB;height:2rem'
+/>
+<input type="number" name="min" placeholder-style="font-size:13px;margin-left:0.5rem"  placeholder="miniute" 
+style='margin:1rem 1rem;border-radius: 7px;background-color:#C9C9CB;height:2rem'
+/>
+<input type="number" name="sec" placeholder-style="font-size:13px;margin-left:0.5rem"  placeholder="second"
+style='margin:1rem 1rem;border-radius: 7px;background-color:#C9C9CB;height:2rem'
+/>
+<button class='queren' formType="submit">O K</button>
+</form>
+</view>
+<view style="{{countdown? '':'display:none;'}}">
+<view class="circle-box">
+    <canvas class="circle" style="width:200px; height:200px;" canvas-id="canvasArcCir">
+    {{h}} : {{m}} : {{s}}
+    </canvas>
+    <view class="draw_btn" bindtap="{{bind}}">Start</view>
+  </view>
+  
+</view>
+<button bindtap='back' class='back' style="{{countdown? '':'display:none;'}}">back</button>
+</view>

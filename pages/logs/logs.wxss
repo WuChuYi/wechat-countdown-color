@@ -1,0 +1,23 @@
+.cc{
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  padding-left: 2rem
+}
+.type{
+  text-align: center;
+  color: #525252;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #D7E166;
+  font-size: 12px;
+  padding: 5px;
+  line-height: 1.5rem;
+  height: 2rem;
+  width: 50%
+}
+.color{
+  width:4rem;
+  height:4rem;
+  margin: -2rem 0 0 2rem ;
+  padding: 0 0.5rem 0 0.5rem;
+}
